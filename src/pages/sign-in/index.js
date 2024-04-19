@@ -42,7 +42,9 @@ const SignIn = () => {
 
         const user = response.data;
 
-        login(user);
+        if (!!user) {
+          login(user);
+        }
       },
     });
 

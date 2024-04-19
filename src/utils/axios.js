@@ -40,7 +40,7 @@ instance.interceptors.response.use(
     return response;
   },
   (error) => {
-    const errorStatusCode = error.response.status;
+    const errorStatusCode = error?.response?.status;
 
     if (errorStatusCode === 401 || errorStatusCode === 403) {
       window.location.href = `${window.location.origin}${ROUTES.signIn}`;

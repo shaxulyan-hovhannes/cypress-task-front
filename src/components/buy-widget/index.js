@@ -62,7 +62,7 @@ const BuyWidget = () => {
   };
 
   useEffect(() => {
-    const leftItems = products.map((product) => ({
+    const leftItems = products?.map((product) => ({
       ...product,
       id: product._id,
       content: (
@@ -88,7 +88,7 @@ const BuyWidget = () => {
                 ref={provided.innerRef}
                 className="buy-widget-column-left"
               >
-                {leftItems.map((item, index) => (
+                {leftItems?.map((item, index) => (
                   <Draggable key={item.id} draggableId={item.id} index={index}>
                     {(provided) => (
                       <div
@@ -114,7 +114,7 @@ const BuyWidget = () => {
                 className="buy-widget-column-right"
               >
                 <div className="buy-widget-column-right-items">
-                  {rightItems.map((item, index) => (
+                  {rightItems?.map((item, index) => (
                     <Draggable
                       key={item.id}
                       draggableId={item.id}
