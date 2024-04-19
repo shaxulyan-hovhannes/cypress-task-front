@@ -1,0 +1,62 @@
+.admin-home {
+  padding: 20px 40px 40px;
+
+  &-main {
+    width: 60%;
+    min-width: 500px;
+  }
+
+  &-title {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 150px;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  &-buyers-history {
+    margin-top: 30px;
+  }
+
+  &-products {
+    margin-top: 80px;
+
+    &-create-form {
+      margin-top: 30px;
+      & > form {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      &-field {
+        max-width: 250px;
+        height: 40px;
+      }
+
+      &-submit-button {
+        height: 39px;
+      }
+    }
+  }
+
+  &-table-title {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+}
+
+.user-home {
+  padding: 20px 40px 40px;
+
+  &-main {
+    min-width: 500px;
+  }
+
+  &-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+  }
+}

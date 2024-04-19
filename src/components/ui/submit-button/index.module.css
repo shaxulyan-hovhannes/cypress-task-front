@@ -1,0 +1,19 @@
+.animatedTextField {
+    animation: inputAnimation 0.8s linear 0s infinite alternate;
+}
+
+@keyframes inputAnimation {
+    0% {
+        transform: scale(1.015);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+.animatedTextField input {
+    font-size: 20px !important;
+    animation: inputAnimation 0.8s linear 0s infinite alternate;
+}
