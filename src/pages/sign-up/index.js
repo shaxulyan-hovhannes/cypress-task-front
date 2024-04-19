@@ -46,7 +46,9 @@ const SignUp = () => {
 
         const user = response.data;
 
-        login(user);
+        if (!!user) {
+          login(user);
+        }
       },
     });
 
